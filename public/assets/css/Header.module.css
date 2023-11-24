@@ -1,0 +1,86 @@
+.navText {
+  color: white !important;
+}
+.whiteText {
+  color: white !important;
+}
+.navText a:hover {
+  color: #87ff00 !important;
+}
+.desktop-logo {
+  width: 130px !important;
+  height: auto !important;
+}
+.mnt-80 {
+  transform: scale(0.925);
+  transform-origin: center center;
+}
+
+.responsive-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/* Example media query: when the screen is 480px or less */
+@media only screen and (max-width: 480px) {
+  .responsive-image {
+    max-width: 400px;
+  }
+}
+
+/* By default, only the desktop logo is visible */
+.mobile-logo {
+  display: none;
+}
+
+/* When viewport width is less than or equal to 768px (typical mobile breakpoint) */
+@media (max-width: 768px) {
+  .desktop-logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+}
+
+.nk-header-title {
+  height: 100vh; /* 100% of the viewport's height */
+  width: 100vw; /* 100% of the viewport's width */
+}
+
+.bg-image {
+  overflow: hidden; /* To ensure the zooming image doesn't spill out */
+}
+
+.jarallax-img {
+  width: 100%;
+  animation: zoomOut 25s infinite;
+  transform-origin: center center;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1); /* The level of zoom. Adjust as needed. */
+  }
+}
+
+.nk-navbar {
+  padding-top: 16px; /* Adjust this value */
+  padding-bottom: 16px; /* Adjust this value */
+  /* if there's a height property, adjust that too */
+  /* height: XXpx; */
+}
+
+.nk-nav ul {
+  font-size: 14px; /* Adjust this value */
+}
+
+.top-layer-image {
+  z-index: 9999; /* high value to ensure it's on top */
+}

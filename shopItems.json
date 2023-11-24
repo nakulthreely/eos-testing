@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Eternal Health Potion",
+      "description": "Unlimited use health potion",
+      "price": 5.99,
+      "image": "https://empireofsight.com/items/0.png",
+      "text": ""
+    },
+    {
+      "id": 1,
+      "name": "Majestic Mana Potion",
+      "description": "Unlimited use of mana potion",
+      "price": 5.99,
+      "image": "https://empireofsight.com/items/1.png",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "name": "Allies Helm",
+      "description": "For those who survived the Haternaut Wars",
+      "price": 3.99,
+      "image": "https://empireofsight.com/items/2.png",
+      "text": "Allows you to enter the mine in Sunwood"
+    },
+    {
+      "id": 3,
+      "name": "Enraged Defender",
+      "description": "than live with shame",
+      "price": 4.99,
+      "image": "https://empireofsight.com/items/3.png",
+      "text": "Allows you to go to the desert 🏜️"
+    },
+    {
+      "id": 4,
+      "name": "Knights Pauldrons",
+      "description": "a perfect gentle-knight",
+      "price": 3.99,
+      "image": "https://empireofsight.com/items/4.png",
+      "text": "Allows you to enter the Harvesting Patch in Pelicus"
+    }
+  ]
+}

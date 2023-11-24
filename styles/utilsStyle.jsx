@@ -1,0 +1,10 @@
+export const xsmall = "450px";
+export const small = "600px";
+export const medium = "998px";
+export const large = "1200px";
+export const xlarge = "1350px";
+export const primaryFont = "Cinzel Decorative, cursive";
+export const secondaryFont = "Ubuntu, sans-serif";
+export const b1 = "400";
+export const b2 = "800";
+export const b3 = "900";

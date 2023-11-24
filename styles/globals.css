@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1199px) {
+  .responsiveDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsiveMobile {
+    display: none;
+  }
+}
+
+.bgWrap {
+  overflow: visible;
+  z-index: -1;
+  width: "100%";
+  height: "100%";
+}
+
+.defaultBgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: visible;
+  z-index: -1;
+}
+
+.loginBgWrap {
+  object-fit: fill;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  z-index: -1;
+}
+
+.blurBgWrap {
+  object-fit: fill;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.custom-input-number input {
+  text-align: center;
+}
+.custom-input-number .rs-input-number-btn-group-vertical {
+  display: none;
+}
