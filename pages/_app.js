@@ -230,7 +230,7 @@ function MyApp({ Component, pageProps }) {
           setLoginStatus(true);
           setAfterLogout(false);
 
-          router.push("/dashboard");
+          // router.push("/dashboard");
         }
       });
     }
@@ -624,7 +624,7 @@ function MyApp({ Component, pageProps }) {
           setLoginStatus(true);
           setAfterLogout(false);
 
-          router.push("/dashboard");
+          // router.push("/dashboard");
         }
       });
     } else {
@@ -654,7 +654,7 @@ function MyApp({ Component, pageProps }) {
           setAccounts(accounts);
           setLoginStatus(true);
 
-          if (router.pathname !== "/") router.push("/dashboard");
+          // if (router.pathname !== "/" || "/test") router.push("/dashboard");
         }
       });
     }

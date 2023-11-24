@@ -46,7 +46,7 @@ const LoginPage = () => {
     setBlur(false);
     setIsHomePage(false);
     if (loginStatus) {
-      router.push("/dashboard");
+      // router.push("/dashboard");
     }
   }, []);
 

@@ -34,7 +34,7 @@ const SelectNetworkCard = (props) => {
                 value: await props.price.data.Ethereum,
               })
               .then(() => {
-                router.push("/dashboard");
+                // router.push("/dashboard");
               });
           } else if (props.network === "BSC") {
             await switchNetwork(props.network);
@@ -45,7 +45,7 @@ const SelectNetworkCard = (props) => {
                 value: await props.price.data.BSC,
               })
               .then(() => {
-                router.push("/dashboard");
+                // router.push("/dashboard");
               });
           } else if (props.network === "AVALANCHE") {
             await switchNetwork(props.network);
@@ -56,7 +56,7 @@ const SelectNetworkCard = (props) => {
                 value: await props.price.data.Avalanche,
               })
               .then(() => {
-                router.push("/dashboard");
+                // router.push("/dashboard");
               });
           } else if (props.network === "POLYGON") {
             await switchNetwork(props.network);
@@ -67,7 +67,7 @@ const SelectNetworkCard = (props) => {
                 value: await props.price.data.Polygon,
               })
               .then(() => {
-                router.push("/dashboard");
+                // router.push("/dashboard");
               });
           }
         }}

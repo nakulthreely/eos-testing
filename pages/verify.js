@@ -98,7 +98,7 @@ const Verify = () => {
                         data-aos="zoom-in"
                         data-aos-delay="300"
                         onClick={(e) => {
-                          router.push("/dashboard");
+                          // router.push("/dashboard");
                         }}
                       >
                         <div className="cinzelStyle hover:text-gold-100">

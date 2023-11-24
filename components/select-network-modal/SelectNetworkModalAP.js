@@ -236,8 +236,8 @@ const SelectNetworkModalAP = () => {
                               .then((receipt) => {
                                 if (receipt) {
                                   setHasAccessPass(true);
-                                  if (loginStatus) router.push("/dashboard");
-                                  else router.push("/create-account");
+                                  // if (loginStatus) router.push("/dashboard");
+                                  // else router.push("/create-account");
                                 }
                                 setIsModalOpen(false);
                                 setSelectedAPName(undefined);
@@ -307,8 +307,8 @@ const SelectNetworkModalAP = () => {
                               .then((receipt) => {
                                 if (receipt) {
                                   setHasAccessPass(true);
-                                  if (loginStatus) router.push("/dashboard");
-                                  else router.push("/create-account");
+                                  // if (loginStatus) router.push("/dashboard");
+                                  // else router.push("/create-account");
                                 }
 
                                 setIsAPModalOpen(false);
@@ -378,8 +378,8 @@ const SelectNetworkModalAP = () => {
                               .then((receipt) => {
                                 if (receipt) {
                                   setHasAccessPass(true);
-                                  if (loginStatus) router.push("/dashboard");
-                                  else router.push("/create-account");
+                                  // if (loginStatus) router.push("/dashboard");
+                                  // else router.push("/create-account");
                                 }
                                 setIsModalOpen(false);
                                 setSelectedAPName(undefined);

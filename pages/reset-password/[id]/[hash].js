@@ -29,7 +29,7 @@ const ResetPassword = () => {
   useEffect(() => {
     //(loginStatus);
     if (loginStatus) {
-      router.push("/dashboard");
+      // router.push("/dashboard");
     }
   }, []);
 

@@ -36,7 +36,7 @@ const CreateAccount = () => {
 
   useEffect(() => {
     if (loginStatus) {
-      router.push("/dashboard");
+      // router.push("/dashboard");
     }
   }, []);
 
