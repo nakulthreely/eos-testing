@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "../components/Layout";
 import GlobalStyle from "../styles/GlobalStyle";
 import "aos/dist/aos.css";
-
+import  Head from "next/head";
 import AOS from "aos";
 import { useState, useEffect } from "react";
 import Axios from "axios";
@@ -863,6 +863,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+    <Head>
+       <meta http-equiv="origin-trial" content="AjnsJ8kellgF8AiHLBeUBJWBrCGvfJoumtdvGmLF9avx8cUpBu58v3KLil/s1BumxQKbxw6v4iM8UXIKZALKRg4AAACHeyJvcmlnaW4iOiJodHRwczovL2Vvcy10ZXN0aW5nLnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWV9"/>
+    </Head>
       <div className="min-h-screen bg-gray-900">
         <EOSContext.Provider
           value={{

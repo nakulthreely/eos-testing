@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta http-equiv="origin-trial" content="AjnsJ8kellgF8AiHLBeUBJWBrCGvfJoumtdvGmLF9avx8cUpBu58v3KLil/s1BumxQKbxw6v4iM8UXIKZALKRg4AAACHeyJvcmlnaW4iOiJodHRwczovL2Vvcy10ZXN0aW5nLnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWV9"/>
+         
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
