@@ -32,7 +32,7 @@ import { EOSContext } from '../contexts/EOSContext';
 const test= () => {
     // const { t } = useTranslation();
     //@ts-ignore
-    const { globalData } = useTriaConnector({ walletUrl: "https://auth.tria.so" });
+    // const { globalData } = useTriaConnector({ walletUrl: "https://auth.tria.so" });
     // const { disconnect } = useDisconnect();
     const [loginUnlinkedModalOpen, setLoginUnlinkedModalOpen] = useState(false);
     const [loginUnlinkedLoading, setLoginUnlinkedLoading] = useState(false);

@@ -18,7 +18,7 @@
     "@iconify/react": "^4.1.0",
     "@tailwindcss/forms": "^0.5.0",
     "@tria-sdk/authenticate": "^1.2.88",
-    "@tria-sdk/connect": "^1.1.20",
+    "@tria-sdk/connect": "1.1.19",
     "add": "^2.0.6",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.5",
