@@ -131,6 +131,7 @@ export default function Home() {
           property="twitter:image"
           content="https://www.empireofsight.com/assets/sectionOneBg.jpg"
         />
+         <meta http-equiv="origin-trial" content=" AjnsJ8kellgF8AiHLBeUBJWBrCGvfJoumtdvGmLF9avx8cUpBu58v3KLil/s1BumxQKbxw6v4iM8UXIKZALKRg4AAACHeyJvcmlnaW4iOiJodHRwczovL2Vvcy10ZXN0aW5nLnZlcmNlbC5hcHA6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWV9"/>
         <meta property="twitter:site" content="@EmpireOfSight" />
         <meta property="twitter:creator" content="@EmpireOfSight" />
       </Head>
