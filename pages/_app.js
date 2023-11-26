@@ -165,6 +165,8 @@ function MyApp({ Component, pageProps }) {
               dappName="Empire of Sight"
               dappDomain={window.parent.origin}
               primaryColor="#FFA800"
+              defaultChain = "FUSE"
+              supportedChains = {["FUSE", "POLYGON"]}
             />
           );
           //setTriaConnectProvider2(<TriaConnectProvider />);
