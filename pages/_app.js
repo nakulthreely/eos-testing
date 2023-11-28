@@ -2,7 +2,7 @@ import "rsuite/dist/rsuite.min.css";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import ItemABI from "../artifacts/Item.json";
 import Layout from "../components/Layout";
 import GlobalStyle from "../styles/GlobalStyle";
 import "aos/dist/aos.css";
@@ -18,7 +18,7 @@ import useWeb3 from "../hooks/useWeb3";
 import useHasAccessPass from "../hooks/useHasAccessPass";
 import useAccessPassContract from "../hooks/useAccessPassContract";
 import useItemContract from "../hooks/useItemContract";
-import { useTriaConnector, useAccount } from "@tria-sdk/connect";
+import { useTriaConnector, useAccount, useContractRead } from "@tria-sdk/connect";
 
 import { EOSContext } from "../contexts/EOSContext";
 import { Web3Context } from "../contexts/Web3Context";
@@ -863,6 +863,24 @@ function MyApp({ Component, pageProps }) {
     setMetaMaskAuthError(false);
   }, []);
 
+  const chainName = "MUMBAI";
+  const contractDetails = {
+    contractAddress: "0x6798f080F7B0da3D5583c0e8E06c1A2b3f2371D1",
+    abi: ItemABI,
+    functionName: "balanceOf",
+    args: ["0xad6dc635843e910ff0426e587b61ba6bb6126473", 0],
+  };
+
+  const { data, isError, isSuccess } = useContractRead({
+    chainName,
+    contractDetails,
+  });
+
+    useEffect(() => {
+    if (data) console.log("data " + data);
+
+    console.log("isSuccess " + isSuccess);
+  }, [data, isSuccess]);
   return (
     <>
     <Head>
