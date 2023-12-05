@@ -27,6 +27,7 @@ import SelectNetworkModalAP from "../components/select-network-modal/SelectNetwo
 import SelectNetworkModalMT from "../components/select-network-modal/SelectNetworkModalMT";
 import Loading from "../components/Loading";
 import Footer from "../components/Footer";
+import { ethers } from "ethers";
 
 function MyApp({ Component, pageProps }) {
   // test localhost
@@ -157,7 +158,7 @@ function MyApp({ Component, pageProps }) {
       if (typeof window !== "undefined") {
         try {
           const { default: Application, TriaConnectProvider } = await import(
-            "@tria-sdk/authenticate"
+            "test-ahaan-v2-4"
           );
           setApplication2(
             <Application
@@ -232,7 +233,7 @@ function MyApp({ Component, pageProps }) {
           setLoginStatus(true);
           setAfterLogout(false);
 
-          // router.push("/dashboard");
+          router.push("/dashboard");
         }
       });
     }
@@ -877,7 +878,7 @@ function MyApp({ Component, pageProps }) {
   });
 
     useEffect(() => {
-    if (data) console.log("data " + data);
+    if (data) console.log("data " + ethers.utils.formatEther(data));
 
     console.log("isSuccess " + isSuccess);
   }, [data, isSuccess]);
